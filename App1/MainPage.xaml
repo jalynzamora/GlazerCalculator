@@ -19,7 +19,7 @@
         <Button x:Name="calculate" Content="Calculate" HorizontalAlignment="Left" Height="36" Margin="350,398,0,0" VerticalAlignment="Top" Width="140" FontSize="20" Click="calculate_Click"/>
         <TextBox x:Name="woodLengthOutput" HorizontalAlignment="Left" Height="46" Margin="377,467,0,0" Text="" VerticalAlignment="Top" Width="140" FontSize="20"/>
         <TextBlock x:Name="WoodLength" HorizontalAlignment="Left" Height="35" Margin="209,468,0,0" Text="Wood Length:" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" FontSize="20"/>
-        <TextBox x:Name="glassAreaOutput" HorizontalAlignment="Left" Height="45" Margin="377,543,0,0" Text="" VerticalAlignment="Top" Width="140" FontSize="20"/>
+        <TextBox x:Name="glassAreaOutput" HorizontalAlignment="Left" Height="45" Margin="377,543,0,0" Text="" VerticalAlignment="Top" Width="177" FontSize="20"/>
         <TextBlock x:Name="Area" HorizontalAlignment="Left" Height="34" Margin="289,539,0,0" Text="Area:" TextWrapping="Wrap" VerticalAlignment="Top" Width="64" FontSize="20"/>
         <TextBlock HorizontalAlignment="Left" Height="60" Margin="169,31,0,0" Text="Glazer Calculation Calculator" TextWrapping="Wrap" VerticalAlignment="Top" Width="482" FontSize="36"/>
         <TextBox x:Name="sldQuantity" HorizontalAlignment="Left" Height="39" Margin="512,339,0,0" Text="" VerticalAlignment="Top" Width="83" FontSize="20" RenderTransformOrigin="0.428,0.255"/>

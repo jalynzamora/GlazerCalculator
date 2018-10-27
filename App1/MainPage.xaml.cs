@@ -41,8 +41,8 @@ namespace App1
             woodLength = 2 * (width + height) * 3.25;
             glassArea =  2 * (width * height);
 
-            woodLengthOutput.Text = woodLength + " feet";
-            glassAreaOutput.Text = glassArea + " square meters";
+            woodLengthOutput.Text = woodLength + " Feet";
+            glassAreaOutput.Text = glassArea + " Square meters";
         }
 
         
