@@ -26,5 +26,60 @@ namespace App1
         {
             this.InitializeComponent();
         }
+
+        private void calculate_Click(object sender, RoutedEventArgs e)
+        {
+            double width, height, woodLength, glassArea;
+            string widthString, heightString;
+
+            widthString = widthInput.Text;
+            width = double.Parse(widthString);
+
+            heightString = heightInput.Text;
+            height = double.Parse(heightString);
+
+            woodLength = 2 * (width + height) * 3.25;
+            glassArea =  2 * (width * height);
+
+            woodLengthOutput.Text = woodLength + " feet";
+            glassAreaOutput.Text = glassArea + " square meters";
+        }
+
+        
+
+        private void slider_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
+        {
+            var slider = sender as Slider;
+
+            var quantity = slider.Value;
+
+            sldQuantity.Text = quantity.ToString();
+        }
+
+        private void widthInput_KeyUp(object sender, KeyRoutedEventArgs e)
+        {
+            string widthString = widthInput.Text;
+            if (!int.TryParse(widthString, out int width))
+            {
+                widthNum.Text = "Width must be a number:";
+            }
+            else
+            {
+                widthNum.Text = "";
+            }
+        }
+
+        private void heightInput_KeyUp(object sender, KeyRoutedEventArgs e)
+        {
+            string heightString = heightInput.Text;
+            if (!int.TryParse(heightString, out int height))
+            {
+                heightNum.Text = "Height must be a number:";
+            }
+            else
+            {
+                heightNum.Text = "";
+            }
+        }
     }
 }
